@@ -1,100 +1,129 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Mozilla Services Repositories : A Description of all projects found in our github repository" />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Mozilla Services Repositories</title>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Mozilla Services Repositories by mozilla-services</title>
   </head>
 
   <body>
+    <div id="container">
+      <div class="inner">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/mozilla-services">View on GitHub</a>
-
-          <h1 id="project_title">Mozilla Services Repositories</h1>
-          <h2 id="project_tagline">A Description of all projects found in our github repository</h2>
-
+        <header>
+          <h1>Mozilla Services Repositories</h1>
+          <h2></h2>
         </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>Metlog</h1>
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/mozilla-services" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-<p>Metlog is a service for applications to capture and inject arbitrary data into a back end storage suitable for out-of-band analytics and processing.</p>
+        <hr>
 
-<p>It's a client-server system that has almost no impact on your application performances. You can use it to send stats to Logstash for instance, using various transports like UDP and ZeroMQ.</p>
+        <section id="main_content">
+          <h1>Cornice</h1>
 
-<ul>
-<li><a href="http://metlog-py.readthedocs.org">Documentation</a></li>
-<li><a href="https://github.com/mozilla-services/metlog-py">Source</a></li>
-</ul><h1>Cornice</h1>
-
-<p>Cornice provides helpers to build &amp; document REST-ish Web Services with Pyramid, with decent default behaviors. It has validation features, and can be integrated with tools like Colander for complex validations.</p>
+<p>Cornice provides helpers to build &amp; document REST-ish Web Services with
+Pyramid, with decent default behaviors. It has validation features, and can be
+integrated with tools like Colander for complex validations.</p>
 
 <p>Cornice can automatically generate Sphinx-based documentation for your APIs.</p>
 
 <ul>
-<li><a href="http://cornice.readthedocs.org">Documentation</a></li>
+<li>
+<a href="http://cornice.readthedocs.org">Documentation</a> </li>
 <li><a href="https://github.com/mozilla-services/cornice">Source</a></li>
 </ul><h1>Circus</h1>
 
-<p>Circus is a process &amp; socket manager. It can be used to monitor and control processes and sockets.</p>
+<p>Circus is a process &amp; socket manager. It can be used to monitor and control
+processes and sockets.</p>
 
-<p>With Circus you can control a whole stack from the command-line or a web interface, and have real-time statistics.</p>
+<p>With Circus you can control a whole stack from the command-line or a web
+interface, and have real-time statistics.</p>
 
 <ul>
-<li><a href="http://circus.io">Documentation</a></li>
+<li>
+<a href="http://circus.io">Documentation</a> </li>
 <li><a href="https://github.com/mozilla-services/circus">Source</a></li>
+</ul><h1>Metlog</h1>
+
+<p>Metlog is a service for applications to capture and inject arbitrary data into
+a backend storage suitable for out-of-band analytics and processing.</p>
+
+<p>It's a client-server system that has almost no impact on your application
+performances. You can use it to send stats to Logstash for instance, using
+various transports like UDP and ZeroMQ.</p>
+
+<ul>
+<li>
+<a href="http://metlog-py.readthedocs.org">Documentation</a> </li>
+<li><a href="https://github.com/mozilla-services/metlog-py">Source</a></li>
+</ul><h1>Powerhose</h1>
+
+<p>Powerhose turns your CPU-bound tasks into I/O-bound tasks so your Python
+applications are easier to scale.</p>
+
+<p>Powerhose is an implementation of the Request-Reply Broker pattern in ZMQ, with
+some extra features around.</p>
+
+<ul>
+<li>
+<a href="http://powerhose.readthedocs.org">Documentation</a> </li>
+<li><a href="https://github.com/mozilla-services/powerhose">Source</a></li>
 </ul><h1>Queuey</h1>
 
 <p>Wat? Another message queue?</p>
 
-<p>Given the proliferation of message queue's, one could be inclined to believe that inventing more is not the answer. Using an existing solution was attempted multiple times with most every existing message queue product.</p>
+<p>Given the proliferation of message queue's, one could be inclined to believe
+that inventing more is not the answer. Using an existing solution was attempted
+multiple times with most every existing message queue product.</p>
 
 <p>The others failed (for our use-cases).</p>
 
-<p>Queuey is meant to handle some unqiue conditions that most other message queue solutions either don't handle, or handle very poorly. Many of them for example are written for queues or pub/sub situations that don't require possibly longer term (multiple days) storage of not just many messages but huge quantities of queues.</p>
+<p>Queuey is meant to handle some unqiue conditions that most other message queue
+solutions either don't handle, or handle very poorly. Many of them for example
+are written for queues or pub/sub situations that don't require possibly longer
+term (multiple days) storage of not just many messages but huge quantities of
+queues.</p>
 
 <ul>
-<li><a href="http://queuey.readthedocs.org">Documentation</a></li>
+<li>
+<a href="http://queuey.readthedocs.org">Documentation</a> </li>
 <li><a href="https://github.com/mozilla-services/queuey">Source</a></li>
-</ul><h1>Powerhose</h1>
+</ul><h1>Tokenlib</h1>
 
-<p>Powerhose turns your CPU-bound tasks into I/O-bound tasks so your Python applications are easier to scale.</p>
-
-<p>Powerhose is an implementation of the Request-Reply Broker pattern in ZMQ, with some extra features around.</p>
+<p>Tokenlib is a generic support library for signed-token-based auth schemes. We
+are using it to generate HMAC tokens for our
+<a href="https://github.com/mozilla-service/tokenserver">token-server</a> project.</p>
 
 <ul>
-<li><a href="http://powerhose.readthedocs.org">Documentation</a></li>
-<li><a href="https://github.com/mozilla-services/powerhose">Source</a></li>
+<li><a href="https://github.com/mozilla-services/tokenlib">Source &amp; documentation</a></li>
 </ul><h1>Vaurien</h1>
 
-<p>Vaurien is a TCP proxy which will let you simulate chaos between your application and a backend server.</p>
+<p>Vaurien is a TCP proxy which will let you simulate chaos between your
+application and a backend server.</p>
 
 <ul>
-<li><a href="http://vaurien.readthedocs.org">Documentation</a></li>
+<li>
+<a href="http://vaurien.readthedocs.org">Documentation</a> </li>
 <li><a href="https://github.com/mozilla-services/vaurien">Source</a></li>
 </ul>
-      </section>
+        </section>
+
+        <footer>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
   </body>
 </html>
